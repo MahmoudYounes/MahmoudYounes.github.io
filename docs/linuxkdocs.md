@@ -294,25 +294,5 @@ $ dmesg --decode --nopager --ctime # shows log level and human readable messages
   to get stuff like S_IRUSR and the rest of the familly (remember POSIX?)
   anyways :D kernel community disagress checkpatch.pl raises a warning.
 
-
-# TODO @ Work
-- have security (spire & stuff) as modules rather than in the init process?
-  - not really needed? why would we do that?
-- have canaries run a debug kernel version
-- validate the production kernel config for security. use the python tool mentioned
-- validate kernel module settings:
-  - do we use customizable modules? No? turn of loading modules..
-  - yes? validate modules are forceibly signed before loaded..
-  - can we load a non signed module? yes? sound the alarm, reconfig and deploy
-  - No? phew we are slightly secure.
-
-
-# TODO @ Fun
-- buy a NUC
-- buy a rasperrybi :cat-smile: (Yocto project, rasperrybi docs)
-
-# Fun questions to look for
-- where does the init execution happen? when does it happen?
-
 # Further readings
 - smem, pmap, sproc (in procfs)
